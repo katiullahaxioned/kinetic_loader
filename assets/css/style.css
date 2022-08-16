@@ -148,10 +148,15 @@ main styling starts here
 
 .kinetic-one {
   border-top-color: var(--clr-white);
-  animation: kinetic1 2s linear infinite;
+  animation: kinetic 2s linear infinite;
 }
 
-@keyframes kinetic1 {
+.kinetic-two {
+  border-left-color: var(--clr-white);
+  animation: kinetic 2s .5s linear infinite;
+}
+
+@keyframes kinetic {
   0% {
     transform: rotate(0deg);
   }
@@ -159,23 +164,6 @@ main styling starts here
     transform: rotate(180deg);
   }
   75%, 100% {
-    transform: rotate(360deg);
-  }
-}
-
-.kinetic-two {
-  border-left-color: var(--clr-white);
-  animation: kinetic2 2s linear infinite;
-}
-
-@keyframes kinetic2 {
-  0%, 25% {
-    transform: rotate(0deg);
-  }
-  50%, 75% {
-    transform: rotate(180deg);
-  }
-  100% {
     transform: rotate(360deg);
   }
 }
